@@ -6,7 +6,14 @@ Minimo_caracteres_nombre = 5
 
 
 def validar_entero(texto):
-    """Valida que el texto contenga solamente números enteros"""
+    """Valida que el texto contenga solamente números enteros.
+
+    Args:
+        texto: Texto ingresado por el usuario.
+
+    Returns:
+        True si el texto tiene solo dígitos o False si no.
+    """
 
     if len(texto) == 0:
         return False
@@ -23,7 +30,11 @@ def validar_entero(texto):
 
 
 def pedir_cantidad():
-    """Pide la cantidad de alumnos y valida que esté entre 1 y 30."""
+    """Pide la cantidad de alumnos y valida que esté entre 1 y 30.
+
+    Returns:
+        Cantidad de alumnos a cargar.
+    """
 
     cantidad = 0
     valido = False
@@ -45,7 +56,14 @@ def pedir_cantidad():
 
 
 def validar_nombre(nombre):
-    """Valida que el nombre tenga al menos 5 caracteres, solo letras y espacios."""
+    """Valida que el nombre tenga al menos 5 caracteres, solo letras y espacios.
+
+    Args:
+        nombre: Nombre del alumno.
+
+    Returns:
+        True si el nombre es válido o False si no.
+    """
 
     if len(nombre) < Minimo_caracteres_nombre:
         return False
@@ -71,7 +89,11 @@ def validar_nombre(nombre):
 
 
 def pedir_nombre():
-    """Pide un nombre hasta que sea válido."""
+    """Pide un nombre hasta que sea válido.
+
+    Returns:
+        Nombre válido del alumno.
+    """
 
     nombre = ""
 
@@ -85,7 +107,14 @@ def pedir_nombre():
 
 
 def pedir_nota(numero_del_parcial):
-    """Pide una nota con valor entero entre 0 y 10."""
+    """Pide una nota con valor entero entre 0 y 10.
+
+    Args:
+        numero_del_parcial: Número del parcial al que corresponde la nota.
+
+    Returns:
+        Nota válida del parcial.
+    """
 
     nota = -1
     valido = False

@@ -1,3 +1,6 @@
+from validaciones import pedir_nombre, pedir_nota
+
+
 def cargar_alumnos(cantidad: int):
     """Carga los datos de todos los alumnos.
 
@@ -115,7 +118,7 @@ def hay_alumnos(nombres: list[str]):
     """
 
     if len(nombres) == 0:
-        print("No hay alumnos cargados.")
+        print("No tengo alumnos cargados")
         return False
 
     return True   
@@ -253,7 +256,6 @@ def ordenar_burbuja(
         parcial_2: Lista con las notas del segundo parcial.
         promedios: Lista con los promedios de los alumnos.
     """
-
 
     for i in range(len(promedios) - 1):
         for j in range(len(promedios) - 1 - i):

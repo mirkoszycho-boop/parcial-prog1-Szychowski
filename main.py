@@ -7,7 +7,7 @@ from procesamiento import (
     buscar_alumno, cargar_alumnos,
     mostrar_listado, mostrar_estadisticas,
     jugar_con_un_nombre, hay_alumnos
-    )
+)
 
 
 def main() -> None:
@@ -15,10 +15,10 @@ def main() -> None:
 
     cantidad = 0
     opcion = -1
-    nombres = [""]
-    parcial_1 = [0]
-    parcial_2 = [0]
-    promedios = [0.0]
+    nombres = []
+    parcial_1 = []
+    parcial_2 = []
+    promedios = []
 
     opcion = ""
 
@@ -69,10 +69,10 @@ def main() -> None:
 
                     buscar_alumno(nombre_buscado,nombres,parcial_1,parcial_2,promedios)
 
-                    pedir_cantidad = 0
-
-            case "6":    
-                    jugar_con_un_nombre(pedir_cantidad, nombres)  
+            case "6":
+                existen_alumnos= hay_alumnos(nombres)
+                if existen_alumnos:
+                    jugar_con_un_nombre(nombres)
 
             case "0":
                 print("Programa finalizado.")
