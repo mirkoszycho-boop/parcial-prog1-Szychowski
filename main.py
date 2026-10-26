@@ -1,9 +1,6 @@
-from validaciones import pedir_cantidad, pedir_nombre, pedir_nota
+from validaciones import pedir_cantidad
 from procesamiento import (
-    calcular_promedios, promedio_general,
-    mejor_promedio, peor_promedio,
-    contar_condiciones, ordenar_burbuja,
-    contar_las_vocales, invertir_nombre,
+    calcular_promedios, ordenar_burbuja,
     buscar_alumno, cargar_alumnos,
     mostrar_listado, mostrar_estadisticas,
     jugar_con_un_nombre, hay_alumnos
